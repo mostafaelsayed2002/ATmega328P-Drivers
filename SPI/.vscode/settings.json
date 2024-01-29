@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "spi.h": "c",
+        "common_macros.h": "c",
+        "reg.h": "c"
+    }
+}

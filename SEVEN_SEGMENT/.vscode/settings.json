@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "7segment.h": "c",
+        "common_macros.h": "c",
+        "gpio.h": "c"
+    }
+}

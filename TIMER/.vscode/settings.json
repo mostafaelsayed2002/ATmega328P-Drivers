@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "timer0.h": "c",
+        "common_macros.h": "c",
+        "timers.h": "c"
+    }
+}

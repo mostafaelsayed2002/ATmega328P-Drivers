@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "reg.h": "c",
+        "common_macros.h": "c",
+        "gpio.h": "c",
+        "std_types.h": "c"
+    }
+}

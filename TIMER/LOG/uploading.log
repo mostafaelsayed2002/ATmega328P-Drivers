@@ -1,0 +1,65 @@
+
+avrdude: Version 7.2
+         Copyright the AVRDUDE authors;
+         see https://github.com/avrdudes/avrdude/blob/main/AUTHORS
+
+         System wide configuration file is /opt/homebrew/etc/avrdude.conf
+         User configuration file is /Users/mac/.avrduderc
+         User configuration file does not exist or is not a regular file, skipping
+
+         Using Port                    : /dev/cu.usbmodem1201
+         Using Programmer              : arduino
+avrdude: input file TIMER/bin/TIMER.hex auto detected as Intel Hex
+         AVR Part                      : ATmega328P
+         Chip Erase delay              : 9000 us
+         PAGEL                         : PD7
+         BS2                           : PC2
+         RESET disposition             : possible i/o
+         RETRY pulse                   : SCK
+         Serial program mode           : yes
+         Parallel program mode         : yes
+         Timeout                       : 200
+         StabDelay                     : 100
+         CmdexeDelay                   : 25
+         SyncLoops                     : 32
+         PollIndex                     : 3
+         PollValue                     : 0x53
+         Memory Detail                 :
+
+                                           Block Poll               Page                       Polled
+           Memory Type Alias    Mode Delay Size  Indx Paged  Size   Size #Pages MinW  MaxW   ReadBack
+           ----------- -------- ---- ----- ----- ---- ------ ------ ---- ------ ----- ----- ---------
+           eeprom                 65    20     4    0 no       1024    4      0  3600  3600 0x00 0x00
+           flash                  65    10   128    0 yes     32768  128    256  4500  4500 0x00 0x00
+           lfuse                   0     0     0    0 no          1    1      0  4500  4500 0x00 0x00
+           hfuse                   0     0     0    0 no          1    1      0  4500  4500 0x00 0x00
+           efuse                   0     0     0    0 no          1    1      0  4500  4500 0x00 0x00
+           lock                    0     0     0    0 no          1    1      0  4500  4500 0x00 0x00
+           signature               0     0     0    0 no          3    1      0     0     0 0x00 0x00
+           calibration             0     0     0    0 no          1    1      0     0     0 0x00 0x00
+
+         Programmer Type : Arduino
+         Description     : Arduino for bootloader using STK500 v1 protocol
+         Hardware Version: 3
+         Firmware Version: 4.4
+avrdude: AVR device initialized and ready to accept instructions
+Reading | ################################################## | 100% 0.00s
+avrdude: device signature = 0x1e950f (probably m328p)
+
+avrdude: processing -U flash:w:TIMER/bin/TIMER.hex:i
+avrdude: reading input file TIMER/bin/TIMER.hex for flash
+         with 2784 bytes in 1 section within [0, 0xadf]
+         using 22 pages and 32 pad bytes
+avrdude: writing 2784 bytes flash ...
+Writing | 
+avrdude: padding flash [0x0a80, 0x0aff]
+################################################## | 100% 0.47s
+avrdude: 2784 bytes of flash written
+avrdude: verifying flash memory against TIMER/bin/TIMER.hex
+avrdude: reading on-chip flash data ...
+Reading | ################################################## | 100% 0.36s
+avrdude: verifying ...
+avrdude: 2784 bytes of flash verified
+
+avrdude done.  Thank you.
+
